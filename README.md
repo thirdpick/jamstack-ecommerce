@@ -1,3 +1,25 @@
+God:~/environment/jamstack-ecommerce (master) $ git add .
+God:~/environment/jamstack-ecommerce (master) $ git remote add origin https://github.com/thirdpick/jamstack-ecommerce.git
+God:~/environment/jamstack-ecommerce (master) $ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/thirdpick/jamstack-ecommerce.git'
+God:~/environment/jamstack-ecommerce (master) $ git push origin master                                                                                                 
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/thirdpick/jamstack-ecommerce.git'
+God:~/environment/jamstack-ecommerce (master) $ git pull -f origin master
+remote: Enumerating objects: 105, done.
+remote: Total 105 (delta 0), reused 0 (delta 0), pack-reused 105
+Receiving objects: 100% (105/105), 13.10 MiB | 36.56 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+From https://github.com/thirdpick/jamstack-ecommerce
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+git push origin master
+Username for 'https://github.com/thirdpick/jamstack-ecommerce.git': thirdpick
+Password for 'https://thirdpick@github.com/thirdpick/jamstack-ecommerce.git': 
+Everything up-to-date
+
+
 ## JAMstack ECommerce Professional (Beta)
 
 JAMstack ECommerce Professional provides a way to quickly get up and running with a fully configurable JAMstack E Commerce site.
