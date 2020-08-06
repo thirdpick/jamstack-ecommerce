@@ -19,6 +19,90 @@ Username for 'https://github.com/thirdpick/jamstack-ecommerce.git': thirdpick
 Password for 'https://thirdpick@github.com/thirdpick/jamstack-ecommerce.git': 
 Everything up-to-date
 
+God:~/environment/jamstack-ecommerce (master) $ git add .
+God:~/environment/jamstack-ecommerce (master) $ git commit -m "secondary"
+[master d4735bc] secondary
+ Committer: Ubuntu <ubuntu@ip-172-31-44-37.ec2.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 22 insertions(+)
+God:~/environment/jamstack-ecommerce (master) $ git push origin master
+Username for 'https://github.com/thirdpick/jamstack-ecommerce.git': thirdpick
+Password for 'https://thirdpick@github.com/thirdpick/jamstack-ecommerce.git': 
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 746 bytes | 746.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/thirdpick/jamstack-ecommerce.git
+   268c29a..d4735bc  master -> master
+God:~/environment/jamstack-ecommerce (master) $ 
+
+
+npm install
+gatsby develop
+
+npm install -g @aws-amplify/cli
+amplify
+amplify configure
+amplify init
+
+God:~/environment/jamstack-ecommerce (master) $ amplify init
+Note: It is recommended to run this command from the root of your app directory
+? Enter a name for the project ecorestoreweb
+? Enter a name for the environment dev
+? Choose your default editor: Visual Studio Code
+? Choose the type of app that you're building javascript
+Please tell us about your project
+? What javascript framework are you using react
+? Source Directory Path:  src
+? Distribution Directory Path: build
+? Build Command:  npm run-script build
+? Start Command: npm run-script start
+Using default provider  awscloudformation
+For more information on AWS Profiles, see:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
+
+? Do you want to use an AWS profile? (Y/n) 
+
+CREATE_COMPLETE AuthRole   AWS::IAM::Role Thu Aug 06 2020 02:00:21 GMT+0000 (Coordinated Universal Time) 
+⠇ Initializing project in the cloud...
+
+CREATE_COMPLETE DeploymentBucket                AWS::S3::Bucket            Thu Aug 06 2020 02:00:29 GMT+0000 (Coordinated Universal Time) 
+CREATE_COMPLETE amplify-ecorestoreweb-dev-15958 AWS::CloudFormation::Stack Thu Aug 06 2020 02:00:32 GMT+0000 (Coordinated Universal Time) 
+✔ Successfully created initial AWS cloud resources for deployments.
+✔ Initialized provider successfully.
+Initialized your environment successfully.
+
+Your project has been successfully initialized and connected to the cloud!
+
+Some next steps:
+"amplify status" will show you what you've added already and if it's locally configured or deployed
+"amplify add <category>" will allow you to add features like user login or a backend API
+"amplify push" will build all your local backend resources and provision it in the cloud
+"amplify console" to open the Amplify Console and view your project status
+"amplify publish" will build all your local backend and frontend resources (if you have hosting category added) and provision it in the cloud
+
+Pro tip:
+Try "amplify add api" to create a backend API and then "amplify publish" to deploy everything
+
+
+
+
+
+
+
+
 
 ## JAMstack ECommerce Professional (Beta)
 

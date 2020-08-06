@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ecorestoreweb-dev-15958-authRole",
+            "UnauthRoleArn": "arn:aws:iam::523111766605:role/amplify-ecorestoreweb-dev-15958-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::523111766605:role/amplify-ecorestoreweb-dev-15958-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-ecorestoreweb-dev-15958-deployment",
+            "UnauthRoleName": "amplify-ecorestoreweb-dev-15958-unauthRole",
+            "StackName": "amplify-ecorestoreweb-dev-15958",
+            "StackId": "arn:aws:cloudformation:us-east-1:523111766605:stack/amplify-ecorestoreweb-dev-15958/88a6ac50-d788-11ea-bf6e-0eba1c1b0c34",
+            "AmplifyAppId": "d27f83dqc2kspl"
+        }
+    }
+}
